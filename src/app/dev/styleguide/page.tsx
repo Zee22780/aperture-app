@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+
 import { Button, Card, Chip, Input } from "@/components/ui";
 
 const colorGroups: { title: string; swatches: { name: string; className: string; hex: string }[] }[] = [
@@ -39,6 +41,11 @@ const colorGroups: { title: string; swatches: { name: string; className: string;
 ];
 
 export default function StyleguidePage() {
+  // Local-only. This page exists to check the design system by eye, and
+  // there's no reason to serve it publicly. `notFound()` gives a real 404
+  // rather than a redirect, so the route doesn't advertise that it exists.
+  if (process.env.NODE_ENV === "production") notFound();
+
   return (
     <main className="mx-auto flex max-w-5xl flex-col gap-16 px-[var(--space-margin-page)] py-16">
       <header>
