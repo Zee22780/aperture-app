@@ -4,7 +4,7 @@ A layout helper for a hand-drawn travel journal.
 
 You give it a memory — a few photos, a title, a caption, the date, where you were. It suggests the three page layouts that suit it best, out of eleven, and tells you why it picked each one. What you get back is a rough sketch of where things go, not a finished page. The idea is to give someone who's about to draw a spread by hand a place to start, not to draw it for them.
 
-Still being built. The database and the visual design are done; signing in, uploading photos, and the actual matching aren't yet.
+Still being built. Signing in, the database, and the visual design are done; uploading photos and the actual matching aren't yet.
 
 ## How it works
 
