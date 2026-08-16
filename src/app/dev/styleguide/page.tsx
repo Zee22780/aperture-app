@@ -129,7 +129,14 @@ export default function StyleguidePage() {
         <h2 className="font-label text-label-caps text-on-surface-variant uppercase">Inputs</h2>
         <div className="flex max-w-sm flex-col gap-6 rounded-[var(--radius-lg)] border border-outline-variant bg-surface-container-low p-6">
           <Input label="Title" name="title" placeholder="Santo Spirito" />
-          <Input label="Location" name="location" placeholder="Firenze, Italia" />
+          <Input label="Location" name="location" placeholder="Firenze, Italia" hint="Optional" />
+          <Input label="Start date" name="startDate" type="date" />
+          <Input
+            label="Trip name"
+            name="tripName"
+            defaultValue=""
+            error="Give your trip a name."
+          />
         </div>
       </section>
 
